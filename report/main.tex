@@ -1,0 +1,39 @@
+% Preamble
+% \documentclass[parskip=half,b5paper,final]{scrbook}
+\documentclass[parskip=half,b5paper]{scrbook}
+
+% \documentclass[parskip=half]{scrartcl}
+
+\usepackage{customstyle}
+\usepackage{customcommands}
+
+% Bibliography
+\addbibresource{references.bib}
+
+% Document metadata
+\title{aQa course 2021 - Miniproject}
+\author{Giorgio Tosti Balducci}
+\date{June 2021}
+
+% \includeonly{automation}  % Keeps all the position references, but only shows this file
+
+% Content
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\include{theory}
+\include{project}
+
+\printbibliography[heading=bibintoc]
+
+\appendix
+\chapter{First appendix}
+\input{appendix}  % input includes everything in the .tex file
+
+\listoftodos
+
+\end{document}

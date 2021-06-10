@@ -1,0 +1,32 @@
+% Customization of existing behaviour
+\setkomafont{captionlabel}{\bfseries}  % change caption label
+\setkomafont{caption}{\small}  % scales caption text accordingly to the dimensions of the main text
+\renewcommand{\labelitemi}{$\heartsuit$}
+\renewcommand{\labelitemii}{$\spadesuit$}
+
+\makeatletter
+\renewcommand*{\fps@figure}{htb} % sets a common behaviour for all floats, instead of specifying
+% * does not complain if command is not there already
+\makeatother
+
+% Packages
+\usepackage[intlimits]{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx}
+\usepackage{upgreek}
+\usepackage{graphicx}
+\usepackage[obeyFinal]{todonotes}
+\usepackage{flafter}  % `float-after' floats after text that refers to them.
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{longtable}
+% \usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{blindtext}
+% \usepackage{biblatex}
+\usepackage[style=numeric, sorting=none]{biblatex}
+
+% Below are the packages that need to be imported after the rest and in this specific order
+\usepackage[hidelinks]{hyperref}  % hidelinks remove boxes around links
+\usepackage[all]{hypcap}  % jump to caption, not to float
+\usepackage[nameinlink]{cleveref}
