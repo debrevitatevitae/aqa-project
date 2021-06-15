@@ -2,8 +2,20 @@
 
 \section{Strongly Correlated Systems}
 \subsection{Exercise 1}
-Let $a_i^\dagger$ be the creation operator on orbital $i$ and $a_i$ the annhilation operator. The canonical anticommutation relations are
+\paragraph*{(a)} Let $a_i^\dagger$ be the creation operator on orbital $i$ and $a_i$ the annhilation operator. The canonical anticommutation relations are
 \begin{align}
-    \{a_i,\, a_j\} = \{a_i^\dagger,\, a_j^\dagger\} = 0 \\
-    \{a_i,\, a_j^\dagger\} = \delta_{i,\, j} \mathds{1}
+    \{a_i,\, a_j\} &= \{a_i^\dagger,\, a_j^\dagger\} = 0 \\
+    \{a_i,\, a_j^\dagger\} &= \delta_{i,\, j} \mathds{1}.
 \end{align}
+
+\paragraph*{(b)} One transformation is
+\begin{align}
+    c_{i,0} &= a_i + a_i^\dagger \\
+    c_{i,1} &= \mathrm{i}(a_i - a_i^\dagger),
+\end{align}
+where $i$ is the orbital index.
+
+\paragraph*{(c)} Majorana fermions satisfy the following anticommutation relation
+\begin{equation}
+    \{c_{i,\alpha}c_{i,\beta}\} = \delta_{i,j}\delta_{\alpha,\beta} \mathds{1}.
+\end{equation}
